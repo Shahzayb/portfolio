@@ -45,8 +45,13 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 
     const { email, message, name }: Body = req.body;
 
-    sendEmail(email, message, name);
-    return res.status(200).end();
+    sendEmail(email, message, name)
+      .then(() => {
+        res.status(200).end();
+      })
+      .catch(() => {
+        res.status(500).end();
+      });
   }
   return res.status(404).json({
     error: {
