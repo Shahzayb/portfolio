@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+
+@import 'tailwindcss/utilities';
+
+.trans-500 {
+  @apply transition duration-500 ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.377);
+  z-index: 10;
+}
