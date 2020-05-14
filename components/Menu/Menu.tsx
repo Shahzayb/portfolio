@@ -1,6 +1,5 @@
 import { NextPage } from 'next';
 import React from 'react';
-import SimpleBar from 'simplebar-react';
 import { GoMarkGithub as GithubIcon, GoMail as MailIcon } from 'react-icons/go';
 import { FaLinkedinIn as LinkedinIcon } from 'react-icons/fa';
 import { AiOutlineReddit as RedditIcon } from 'react-icons/ai';
@@ -125,19 +124,18 @@ const AsideBar: NextPage = () => {
         </header>
 
         <motion.div className="pt-8" variants={fadeInUpChild}>
-          <div style={{ height: 'calc(100vh - 174px)' }}>
-            <SimpleBar
-              className="pb-10"
-              style={{
-                height: '100%',
-                paddingRight: '20px',
-              }}
-            >
-              {tab === 'about' && <About />}
-              {tab === 'skill' && <Skill />}
-              {tab === 'service' && <Service />}
-              {tab === 'contact' && <Contact />}
-            </SimpleBar>
+          <div
+            style={{
+              height: 'calc(100vh - 174px)',
+              overflow: 'auto',
+              paddingRight: '20px',
+              paddingBottom: '20px',
+            }}
+          >
+            {tab === 'about' && <About />}
+            {tab === 'skill' && <Skill />}
+            {tab === 'service' && <Service />}
+            {tab === 'contact' && <Contact />}
           </div>
         </motion.div>
         <motion.footer

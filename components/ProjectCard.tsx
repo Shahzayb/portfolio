@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsThreeDotsVertical as ThreeDotsV, BsX } from 'react-icons/bs';
 import { FiExternalLink as WebsiteLinkIcon, FiCode } from 'react-icons/fi';
-import SimpleBar from 'simplebar-react';
 import { NextPage } from 'next';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion, AnimatePresence } from 'framer-motion';
@@ -115,7 +114,9 @@ const ProjectCard: NextPage<Props> = ({
                 <BsX size="25" />
               </button>
             </header>
-            <SimpleBar style={{ height: '80%', paddingRight: '8px' }}>
+            <div
+              style={{ height: '80%', paddingRight: '20px', overflow: 'auto' }}
+            >
               <main className="my-8">
                 <ul className="list-disc ml-5 child-mb">
                   {features.map((feature) => (
@@ -123,7 +124,7 @@ const ProjectCard: NextPage<Props> = ({
                   ))}
                 </ul>
               </main>
-            </SimpleBar>
+            </div>
             <footer className="border-t-2 border-black">
               <div className="flex items-center justify-between mt-4">
                 <a
