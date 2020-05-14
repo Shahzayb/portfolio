@@ -52,12 +52,13 @@ export default (req: NowRequest, res: NowResponse) => {
       .catch(() => {
         res.status(500).end();
       });
+  } else {
+    return res.status(404).json({
+      error: {
+        code: 'not_found',
+        messgae:
+          "The requested endpoint was not found or doesn't support this method.",
+      },
+    });
   }
-  return res.status(404).json({
-    error: {
-      code: 'not_found',
-      messgae:
-        "The requested endpoint was not found or doesn't support this method.",
-    },
-  });
 };
