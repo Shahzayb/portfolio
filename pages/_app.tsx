@@ -1,6 +1,4 @@
 // import App from 'next/app'
-import 'simplebar';
-import 'simplebar/dist/simplebar.css';
 import '../public/styles/index.css';
 import { MenuProvider } from '../context/menu';
 import { AppProps } from 'next/app';
