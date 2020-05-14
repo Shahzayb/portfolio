@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NowRequest, NowResponse } from '@now/node';
 import validator from 'validator';
 
 import { sendEmail } from '../../utils/email';
@@ -9,7 +9,7 @@ interface Body {
   message: string;
 }
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NowRequest, res: NowResponse) => {
   if (req.method === 'POST') {
     const errors = [];
     if (validator.isEmpty(req.body.email, { ignore_whitespace: true })) {
