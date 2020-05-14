@@ -7,7 +7,10 @@
 @import 'tailwindcss/utilities';
 
 .trans-500 {
-  @apply transition duration-500 ease-in-out;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .overlay {
