@@ -83,8 +83,9 @@ const AsideBar: NextPage = () => {
         initial="hidden"
         animate="visible"
         variants={fadeInUpParent}
+        className="max-w-sm w-full mx-auto pt-16 px-2"
       >
-        <header className="max-w-sm w-full mx-auto pt-20 pl-4">
+        <header className="pt-2">
           <nav>
             <ul className="flex flex-row flex-wrap">
               <motion.li variants={fadeInUpChild} className="pr-6 sm:pr-10">
@@ -123,9 +124,15 @@ const AsideBar: NextPage = () => {
           </nav>
         </header>
 
-        <motion.div variants={fadeInUpChild}>
-          <div className="max-w-sm w-full mx-auto mt-8 px-4 sm:px-10 body-height">
-            <SimpleBar style={{ height: '100%', paddingRight: '8px' }}>
+        <motion.div className="pt-8" variants={fadeInUpChild}>
+          <div style={{ height: 'calc(100vh - 174px)' }}>
+            <SimpleBar
+              className="pb-10"
+              style={{
+                height: '100%',
+                paddingRight: '20px',
+              }}
+            >
               {tab === 'about' && <About />}
               {tab === 'skill' && <Skill />}
               {tab === 'service' && <Service />}
@@ -135,7 +142,7 @@ const AsideBar: NextPage = () => {
         </motion.div>
         <motion.footer
           variants={fadeInUpChild}
-          className="bg-black-300 h-10 absolute left-0 right-0 bottom-0"
+          className="bg-palette-bg-2 h-10 absolute left-0 right-0 bottom-0"
         >
           <ul className="flex flex-row flex-wrap h-full justify-center">
             <li className="w-16">
