@@ -2,12 +2,20 @@
 import '../public/styles/index.css';
 import { MenuProvider } from '../context/menu';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <MenuProvider>
-      <Component {...pageProps} />
-    </MenuProvider>
+    <>
+      <Head>
+        <title>Shahzaib Sarwar | Full-Stack Web Developer | Portfolio</title>
+        {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" /> */}
+      </Head>
+      <MenuProvider>
+        <Component {...pageProps} />
+      </MenuProvider>
+    </>
   );
 }
 

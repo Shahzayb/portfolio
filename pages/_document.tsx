@@ -6,6 +6,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en" className="font-sans">
         <Head>
+          <meta
+            name="description"
+            content="Hi, I'm Shahzaib Sarwar. I'm a full-stack web developer working in node.js, react.js and mongodb"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
             rel="stylesheet"
