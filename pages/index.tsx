@@ -16,7 +16,7 @@ import { useMenu } from '../context/menu';
 const fadeInUpParent = {
   visible: {
     transition: {
-      staggerChildren: 0.6,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -25,12 +25,10 @@ const fadeInUpItem = {
   hidden: {
     y: 40,
     opacity: 0,
-    scale: 2,
   },
   visible: {
     y: 0,
     opacity: 1,
-    scale: 1,
   },
 };
 
@@ -43,7 +41,7 @@ const fadeInLeft = {
     x: 0,
     opacity: 1,
     transition: {
-      delay: 2.5,
+      delay: 1,
       duration: 0.6,
       ease: 'easeOut',
     },
@@ -59,7 +57,7 @@ const fadeInDown = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 2.5,
+      delay: 1,
       duration: 0.6,
       ease: 'easeOut',
     },
