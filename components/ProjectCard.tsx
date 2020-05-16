@@ -9,7 +9,7 @@ interface Props {
   title: string;
   description: string;
   imgSrc: string;
-  features: string[];
+  features: React.ReactElement[];
   githubUrl: string;
   websiteUrl: string;
 }
@@ -119,8 +119,8 @@ const ProjectCard: NextPage<Props> = ({
             >
               <main className="my-8">
                 <ul className="list-disc ml-5 child-mb">
-                  {features.map((feature) => (
-                    <li key={feature}>{feature}</li>
+                  {features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
                   ))}
                 </ul>
               </main>
