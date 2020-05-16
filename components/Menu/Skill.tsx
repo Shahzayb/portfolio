@@ -43,6 +43,7 @@ function Skill() {
           <li>Node.js</li>
           <li>MongoDB</li>
           <li>CSS3</li>
+          <li>HTML5</li>
         </motion.ul>
         <motion.h2
           variants={fadeInUpChild}

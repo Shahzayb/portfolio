@@ -38,7 +38,7 @@ function Skill() {
           <li className="py-1">Style your UI with CSS3</li>
           <li className="py-1">Create your front-end with React.js/Next.js</li>
           <li className="py-1">Write Unit Tests</li>
-          <li className="py-1">Integrate front-end to API</li>
+          <li className="py-1">Track codebase changes with Git VCS</li>
           <li className="py-1">Create real-time apps with Web Socket</li>
         </motion.ul>
       </div>
