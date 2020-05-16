@@ -30,13 +30,13 @@ function About() {
         Passionate Web Developer
       </motion.h1>
       <motion.p variants={fadeInUpChild} className="mt-3">
-        I'm a Javascript/Typescript developer working in Express.js, React.js
-        and MongoDB. My main focus right now is on the back-end development.
+        I'm a Javascript/Typescript developer based in Lahore, Pakistan. I am a
+        fresh graduate student with a bachelor's degree in Computer Science. My
+        technology stack is Express.js, React.js, and MongoDB/MySQL.
       </motion.p>
       <motion.p variants={fadeInUpChild} className="mt-3">
-        I can easily create REST APIs and design databases. I can also create
-        Single Page Apps in React.js/Next.js. I've been working on my side
-        projects for 1+ year now. And i'm loving it.
+        I can create REST APIs and design databases. I can also create Single
+        Page Apps in React.js/Next.js. And I love working on my side projects.
       </motion.p>
 
       <motion.p variants={fadeInUpChild} className="mt-8">

@@ -16,7 +16,7 @@ import { useMenu } from '../context/menu';
 const fadeInUpParent = {
   visible: {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.2,
     },
   },
 };

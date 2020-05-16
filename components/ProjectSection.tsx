@@ -52,15 +52,34 @@ function ProjectSection() {
         image, comment, follow, unfollow, search etc..."
           imgSrc="/pistagram.jpeg"
           features={[
-            'Created backend API with Express.js',
-            'Wrote unit test for the whole API',
-            'Created database in MongoDB',
-            'Used React.js on frontend',
-            'Created UI with MaterialUI',
-            'Managed client side state in React-Query',
-            'Used Cloudinary as media storage',
-            'Authentication with Google OAuth 2.0',
-            'Responsive images to reduce bandwidth',
+            <>
+              Created backend <strong>REST API</strong> with{' '}
+              <strong>Express.js</strong>
+            </>,
+            <>
+              Wrote <strong>unit test</strong> for the whole API
+            </>,
+            <>
+              Created database in <strong>MongoDB</strong>
+            </>,
+            <>
+              Used <strong>React.js</strong> on frontend
+            </>,
+            <>
+              Created UI with <strong>MaterialUI</strong>
+            </>,
+            <>
+              Managed client side state in <strong>React-Query</strong>
+            </>,
+            <>
+              Used <strong>Cloudinary</strong> as media storage
+            </>,
+            <>
+              Authentication with <strong>Google OAuth 2.0</strong>
+            </>,
+            <>
+              <strong>Responsive images</strong> to reduce bandwidth
+            </>,
           ]}
           githubUrl="https://github.com/Shahzayb/pistagram"
           websiteUrl="https://pistagraam.herokuapp.com/"
@@ -71,14 +90,34 @@ function ProjectSection() {
         image, search user, search image..."
           imgSrc="/freemage.jpeg"
           features={[
-            'Created backend API with Express.js',
-            'Created database in MongoDB & used Mongoose.js library',
-            'Used React.js on frontend',
-            'Styled UI with only CSS',
-            'Managed client side state in Redux.js',
-            'Used Cloudinary as media storage',
-            'Authentication with Google OAuth 2.0',
-            'Responsive images to reduce bandwidth',
+            <>
+              Created backend <strong>REST API</strong> with{' '}
+              <strong>Express.js</strong>
+            </>,
+            <>
+              Created database in <strong>MongoDB</strong>
+            </>,
+            <>
+              Used <strong>Mongoose.js</strong> library as ODM
+            </>,
+            <>
+              Used <strong>React.js</strong> on frontend
+            </>,
+            <>
+              Styled UI with only <strong>CSS3</strong>
+            </>,
+            <>
+              Managed client side state in <strong>Redux.js</strong>
+            </>,
+            <>
+              Used <strong>Cloudinary</strong> as media storage
+            </>,
+            <>
+              Authentication with <strong>Google OAuth 2.0</strong>
+            </>,
+            <>
+              <strong>Responsive images</strong> to reduce bandwidth
+            </>,
           ]}
           githubUrl="https://github.com/Shahzayb/freemage"
           websiteUrl="https://freemage.herokuapp.com/"
@@ -88,16 +127,38 @@ function ProjectSection() {
           description="its a social networking website that allows you to send and receive gifs in real-time."
           imgSrc="/jif-chat.jpeg"
           features={[
-            'Created backend API with Express.js',
-            'Created database in MongoDB',
-            'Used Mongoose library',
-            'Used React.js on frontend',
-            'Used only CSS for styling',
-            'Used video as a gif for high performace & to save bandwidth',
-            'Authentication with Google OAuth 2.0',
-            'Tracked real-time data changes with MongoDB Change Streams',
-            'Send real-time posts with Server Sent Events',
-            'Captured video with HTML5 MediaDevices API',
+            <>
+              Created backend REST API with <strong>Express.js</strong>
+            </>,
+            <>
+              Created database in <strong>MongoDB</strong>
+            </>,
+            <>
+              Used <strong>Mongoose</strong> library
+            </>,
+            <>
+              Used <strong>React.js</strong> on frontend
+            </>,
+            <>
+              Used only <strong>CSS3</strong> for styling
+            </>,
+            <>
+              Used <strong>video as a gif</strong> for high performace and to
+              save bandwidth
+            </>,
+            <>
+              Authentication with <strong>Google OAuth 2.0</strong>
+            </>,
+            <>
+              Tracked real-time data changes with{' '}
+              <strong>MongoDB Change Streams</strong>
+            </>,
+            <>
+              Send real-time posts with <strong>Server Sent Events</strong>
+            </>,
+            <>
+              Captured video with <strong>HTML5 MediaDevices API</strong>
+            </>,
           ]}
           githubUrl="https://github.com/Shahzayb/jif-chat"
           websiteUrl="https://jifchat.herokuapp.com/"
@@ -107,10 +168,18 @@ function ProjectSection() {
           description="A real-time chat application made with socket.io"
           imgSrc="/chat-app.png"
           features={[
-            'Created backend API with Express.js',
-            'Created Web Socket server with Socket.io',
-            'Used AJAX on front-end',
-            'Created UI with CSS',
+            <>
+              Created backend REST API with <strong>Express.js</strong>
+            </>,
+            <>
+              Created Web Socket server with <strong>Socket.io</strong>
+            </>,
+            <>
+              Used <strong>AJAX</strong> on front-end
+            </>,
+            <>
+              Created UI with <strong>CSS</strong>
+            </>,
           ]}
           githubUrl="https://github.com/Shahzayb/chat-app"
           websiteUrl="https://shahzayb-chat-app.herokuapp.com/"

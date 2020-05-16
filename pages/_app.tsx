@@ -2,12 +2,19 @@
 import '../public/styles/index.css';
 import { MenuProvider } from '../context/menu';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <MenuProvider>
-      <Component {...pageProps} />
-    </MenuProvider>
+    <>
+      <Head>
+        <title>Shahzaib Sarwar | Full-Stack Web Developer | Portfolio</title>
+        
+      </Head>
+      <MenuProvider>
+        <Component {...pageProps} />
+      </MenuProvider>
+    </>
   );
 }
 
