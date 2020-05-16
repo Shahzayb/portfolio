@@ -9,8 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Shahzaib Sarwar | Full-Stack Web Developer | Portfolio</title>
-        {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" /> */}
+        
       </Head>
       <MenuProvider>
         <Component {...pageProps} />
