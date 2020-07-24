@@ -47,6 +47,48 @@ function ProjectSection() {
       </motion.h1>
       <div className="max-w-screen-xl mx-auto flex flex-wrap justify-around">
         <ProjectCard
+          title="Sidea"
+          description="It's an online web project ideas sharing platform."
+          imgSrc="/sidea.jpeg"
+          features={[
+            <>
+              Created backend <strong>API</strong> with{' '}
+              <strong>GraphQL - Apollo Server</strong>
+            </>,
+            <>
+              Created database in <strong>MySQL</strong>
+            </>,
+            <>
+              Used <strong>Next.js</strong> on frontend
+            </>,
+            <>
+              Created UI with <strong>Material UI</strong>
+            </>,
+            <>
+              Managed client side state in{' '}
+              <strong>Apollo Client (React)</strong>
+            </>,
+            <>
+              Used <strong>Vercel</strong> for Next.js hosting
+            </>,
+            <>
+              Hosted MySQL database on <strong>AWS</strong>
+            </>,
+            <>
+              Used <strong>Typescript</strong> language
+            </>,
+            <>
+              Used <strong>SendGrid</strong> for email delivery
+            </>,
+            <>
+              Used <strong>GraphQL Code Generator</strong> for typescript types
+              generation
+            </>,
+          ]}
+          githubUrl="https://github.com/Shahzayb/sidea"
+          websiteUrl="https://sidea.vercel.app/"
+        />
+        <ProjectCard
           title="Pistagram"
           description="A clone of Instagram with limited features like image upload, like
         image, comment, follow, unfollow, search etc..."
@@ -163,7 +205,7 @@ function ProjectSection() {
           githubUrl="https://github.com/Shahzayb/jif-chat"
           websiteUrl="https://jifchat.herokuapp.com/"
         />
-        <ProjectCard
+        {/* <ProjectCard
           title="Text Chat"
           description="A real-time chat application made with socket.io"
           imgSrc="/chat-app.png"
@@ -183,7 +225,7 @@ function ProjectSection() {
           ]}
           githubUrl="https://github.com/Shahzayb/chat-app"
           websiteUrl="https://shahzayb-chat-app.herokuapp.com/"
-        />
+        /> */}
       </div>
     </section>
   );
